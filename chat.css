@@ -1,0 +1,124 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-image: url(assets/капли_воды_тема.jpg);
+  background-size: cover;
+  transition: all 2s ease-in-out;
+  background-attachment: fixed;
+}
+
+.settings-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; 
+  position: fixed;
+  top: 20px;
+  left: 20px; 
+}
+
+.drop-down-list-style {
+  padding: 5px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.theme, 
+.option {
+  height: 25px;
+  font-size: 20px;
+}
+
+.theme {
+  border-radius: 5px;
+}
+
+.themePink {
+  background-image: url("assets/sky.webp");
+}
+
+.themeGold {
+  background-image: url('assets/texture.webp');
+}
+
+.themeDrops {
+  background-image: url('assets/капли_воды_тема.jpg');
+}
+
+.exitbtn {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: lightcoral;
+  font-size: 20px;
+}
+
+.exitbtn:hover {
+  transform: scale(1.05);
+}
+
+.exitbtn:active {
+  background-color: rgb(223, 35, 35);
+  color: rgb(182, 224, 224);
+}
+
+.fon-chat {
+  padding: 20px;
+  width: 1000px;
+}
+
+.font-message {
+  padding: 10px;
+  padding-right: 30px;
+  margin-bottom: 5px;
+  width: max-content;
+  max-width: 70%;
+  min-width: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: burlywood;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nick {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.interactive-element {
+  width: 1000px;
+  display: flex;
+  gap: 10px;
+  position: fixed;
+  bottom: 5px;
+}
+
+.text-box {
+  height: 40px;
+  line-height: 30px;
+  font-size: 25px;
+  width: 100%;
+}
+
+.sentbtn {
+  border-radius: 10px;
+  background-color: bisque;
+  color: transparent;
+  background-image: url(assets/sent_message.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+
+.sentbtn:hover {
+  transform: scale(1.1);
+}
+
+.sentbtn:active {
+  background-color: aquamarine;
+}

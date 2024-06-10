@@ -1,0 +1,51 @@
+html {
+  background-color:#214c84;
+  background-blend-mode:overlay;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-image:url(assets/капли_воды_тема.jpg);
+  background-size:cover;
+  height: 100%;
+}
+
+.form-style {
+  padding:50px 70px;
+  border-radius:10px;
+  box-shadow:4px 4px 15px rgba(0, 0, 0, 0.2);
+  background-color:#fff;
+}
+
+ h3 {
+  font-weight:bold;
+  margin-bottom:30px;
+}
+
+.form-control-item {
+  width: 300px;
+  height: 40px;
+  border-radius:10px;
+  margin-bottom:25px;
+  padding:10px 20px;
+  font-size: 25px;
+}
+
+.create-account {
+  height: 50px;
+  border-radius:30px;
+  padding:10px 20px;
+  font-size:25px;
+  font-weight:bold;
+  background-color:#3f93ff;
+  border:none;
+  color:white;
+  margin-top:20px;
+}
+
+.create-account:hover {
+  transform: scale(1.05);
+}
+
+.create-account:active {
+  background-color: rgb(86, 86, 211);
+}
