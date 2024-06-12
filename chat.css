@@ -1,6 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  height: 97vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   background-image: url(assets/капли_воды_тема.jpg);
   background-size: cover;
   transition: all 2s ease-in-out;
@@ -11,10 +18,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px; 
-  position: fixed;
+  gap: 10px;
+  position: absolute;
   top: 20px;
-  left: 20px; 
+  left: 20px;
 }
 
 .drop-down-list-style {
@@ -26,9 +33,10 @@ body {
   font-size: 20px;
 }
 
-.theme, 
-.option {
-  height: 25px;
+.drop-down-list-style,
+.theme,
+.option,
+.exitbtn {
   font-size: 20px;
 }
 
@@ -53,7 +61,6 @@ body {
   height: 30px;
   border-radius: 5px;
   background-color: lightcoral;
-  font-size: 20px;
 }
 
 .exitbtn:hover {
@@ -66,8 +73,12 @@ body {
 }
 
 .fon-chat {
-  padding: 20px;
-  width: 1000px;
+  width: 60%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  overflow: hidden;
 }
 
 .font-message {
@@ -91,14 +102,13 @@ body {
 }
 
 .interactive-element {
-  width: 1000px;
+  width: 60%;
   display: flex;
   gap: 10px;
-  position: fixed;
-  bottom: 5px;
 }
 
 .text-box {
+  padding: 0px 10px;
   height: 40px;
   line-height: 30px;
   font-size: 25px;
@@ -106,6 +116,7 @@ body {
 }
 
 .sentbtn {
+  width: 42px;
   border-radius: 10px;
   background-color: bisque;
   color: transparent;
@@ -121,4 +132,92 @@ body {
 
 .sentbtn:active {
   background-color: aquamarine;
+}
+
+@media (max-width: 1200px) {
+
+  .fon-chat {
+    height: 75%;
+    width: 80%;
+  }
+
+  .nick {
+    font-size: 22px;
+  }
+
+  .font-message {
+    min-width: 90%;
+    font-size: 19px;
+  }
+
+  .settings-list {
+    position: relative;
+    gap: 5px;
+    top: 0px;
+    left: -31%;
+  }
+
+  .interactive-element {
+    width: 80%;
+  }
+
+  .drop-down-list-style,
+  .theme,
+  .option,
+  .exitbtn,
+  .text-box {
+    font-size: 16px;
+  }
+
+  .exitbtn {
+height: 22px;
+  }
+
+  .text-box {
+    height: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .fon-chat {
+    height: 75%;
+    width: 90%;
+  }
+
+  .nick {
+    font-size: 20px;
+  }
+
+  .font-message {
+    min-width: 90%;
+    font-size: 18px;
+  }
+
+  .settings-list {
+    position: relative;
+    gap: 5px;
+    top: 0px;
+    left: -28%;
+  }
+
+  .interactive-element {
+    width: 90%;
+  }
+
+  .drop-down-list-style,
+  .theme,
+  .option,
+  .exitbtn,
+  .text-box {
+    font-size: 14px;
+  }
+
+  .exitbtn {
+height: 20px;
+  }
+
+  .text-box {
+    height: 30px;
+  }
 }
